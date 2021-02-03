@@ -1,0 +1,199 @@
+body{
+	font:Arial, Helvetica, sans-serif ;
+}
+
+#container{
+	width:1050px;
+	/*border:1px solid grey;*/  
+	/*height: 100px;*/
+	margin:0 auto; /* top and bottom =0 and left and right are equal*/
+	
+}
+/*#header{
+ 	display: flex;
+}
+#searchbox{
+	height: 60px;
+	border:1px solid black;
+	margin-left:350px;
+	margin-top:50px;
+	margin-bottom: 30px;
+	background-color: lightgreen;
+
+}
+*/
+#header{
+	height:100px;
+	padding: 10px 0px;
+
+}
+#brand{
+	float:left;
+}
+h1 a{
+	font-size: 50px;
+	font-weight: 100;
+	color:#861BBF;
+	text-decoration: none;/* no underline */
+
+}
+#searchbox{
+	float:right;
+	background: linear-gradient(lightgreen, darkgreen);
+	background:-webkit-linear-gradient(lightgreen, darkgreen);
+	background: -o-linear-gradient(lightgreen, darkgreen);
+	background: -moz-linear-gradient(lightgreen, darkgreen);
+	background: -ms-linear-gradient(lightgreen, darkgreen);
+	width: 400px;
+	height:50px; 
+	padding: 15px 10px 0px 20px; /*inside margin*/
+	margin-top:20px; /*outside margin*/
+}
+.text{
+	float:left;
+	width:200px;
+	padding:5px;
+	font-size:15px;
+	color:orange;
+	background: white url(images/searchbutton.png) right center no-repeat;
+	border:1px solid blue ;
+}
+.submit{
+	float:right;
+	padding: 5px;
+	font-weight: bold;
+	color:white;
+	background:purple;
+	font-size:15px;
+}
+.clear{
+	clear:both;
+}
+
+#menu{
+	height:70px;
+	background:linear-gradient(lightyellow,yellow); /*to gradually change the color*/
+	background:-webkit-linear-gradient(lightyellow,yellow); 
+	background:-moz-linear-gradient(lightyellow,yellow); 
+	background:-o-linear-gradient(lightyellow,yellow); 
+	background:-ms-linear-gradient(lightyellow,yellow); 
+
+	padding:7px 0px;
+}
+
+
+ul{
+	list-style: none;
+
+}
+#menu ul li{ /*to access the list items*/
+	float:left;
+	padding: 0px 30px; /* margin inside the element*/
+	height: 30px;
+	border-right: 1px solid; /* border only on the right side*/
+}
+#menu ul li:last-child{ /* to acess the last item on the list*/
+	border-right: none;
+}
+
+
+#menu ul li a{ /* to acess the link on each item*/
+	text-decoration: none;
+	text-transform: uppercase;
+	font-size:17px;
+	line-height: 30px;
+	-webkit-transition:font-size 0.5s ease;/*safary*/
+	-moz-transition:font-size 0.5s ease;/*mozilla*/
+	-o-transition:font-size 0.5s ease;/*opera*/
+	-ms-transition:font-size 0.5s ease;/*internet explorer*/
+	transition:font-size 0.5s ease;/*ease for the speed option*/
+}	
+#menu ul li a:hover, #menu ul li a.active{ /* to define the 
+	display when hover and to define the display of class .active*/
+	font-size:20px;
+	font-weight:bold;
+	color:purple;
+}
+
+#introduction{
+	background:linear-gradient(#B8E297,#87BC5E);
+	background:-webkit-linear-gradient(#B8E297,#87BC5E);
+	background:-moz-linear-gradient(#B8E297,#87BC5E);
+	background:-o-linear-gradient(#B8E297,#87BC5E);
+	background:-ms-linear-gradient(#B8E297,#87BC5E);
+	padding:30px;
+	margin:17px 0px;
+}
+
+#introduction h3{
+	font-size:40px;
+	color:#1F4B00;
+	font-weight:normal; /*no bold option*/
+}
+#introduction p{
+	font-size:25px;
+	color:#437313;
+	font-weight:normal; 
+	text-align: justify; /*to apply the complete line format, better fulling */
+
+}
+.sidebar{
+	height: 500px;
+	width: 450px;
+	border:1px solid #01394C;
+	border-radius: 20px;
+	padding:10px 30px;
+}
+.sidebar h3{
+	color:#AC16AC;
+	font-size:30px;
+}
+.sidebar ul li a{
+	text-decoration:none;
+	font-size:21px;
+	color:#01394C ;
+	-webkit-transition:font-size 0.5s ease;/*safary*/
+	-moz-transition:font-size 0.5s ease;/*mozilla*/
+	-o-transition:font-size 0.5s ease;/*opera*/
+	-ms-transition:font-size 0.5s ease;/*internet explorer*/
+	transition:font-size 0.5s ease;/*ease for the speed option*/
+}
+.sidebar ul li a:hover{
+	text-decoration: none;
+	color:purple;
+	font-size: 25px;
+	font-weight: bold;
+}
+
+.sidebar ul{
+	padding-top: 10px;
+}
+#leftsidebar ul li{
+	padding-bottom: 7px;
+	list-style-image: url(images/arrowimage.png); /* add arrow icon image to each list member*/
+	padding-left:10px; 
+}
+#rightsidebar ul li{
+	padding-bottom: 16px;
+	padding-top: 16px;
+	background: url(images/check.png) no-repeat left center;
+	padding-left: 70px;
+	padding:16 0 16px 70px;/*line replace all padding lines*/
+}
+
+#leftsidebar{
+	float:left;
+}
+#rightsidebar{
+	float:right;
+}
+.footer{
+	height:40px;
+	background:linear-gradient(lightyellow,yellow);
+	background:-webkit-linear-gradient(lightyellow,yellow);
+	background:-moz-linear-gradient(lightyellow,yellow);
+	background:-o-linear-gradient(lightyellow,yellow);
+	background:-ms- linear-gradient(lightyellow,yellow);
+	padding: 10px 30px;
+	margin-top: 15px;
+}
